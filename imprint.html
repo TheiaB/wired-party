@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>wired.party!</title>
+	<meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav.png"/>
+    <meta name="viewport" content= "width=device-width">
+	<style>
+		*{margin:0;}
+		body {
+			color:#A8F;
+			background:#131415;
+			font: 16px sans-serif;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			min-height:100vh;
+            flex-direction:column;
+		}
+		hr {
+			border:none;
+			height:2px;
+			background: #C7F;
+			margin:.25em 0 1em;
+		}
+		section {
+			position:relative;
+		}
+		#toast {
+			position:absolute;
+			bottom:-1rem;
+			transform:translate(0,100%);
+			font-size:11px;
+		}
+        img{height:1em;}
+	</style>
+</head>
+<body>
+	<section class="legal">
+		<h3>Imprint</h3>
+		<hr>
+		<p>Tea Bähr,<br><a href="javascript:void(0)" onclick="navigator.clipboard.writeText('tea' + '@' + 'teamakes.games');toast('copied to clipboard!');return false" class="m"><span><img src="m.svg"></span></a></p>
+		 <p>Postal Address:<br>Postfach 12 07<br>54202 Trier</p>
+		<div id="toast"></div>
+	</section>
+	
+	
+	<script>
+	function toast(b){var a=document.getElementById("toast");a.innerHTML=b}
+	</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>wired.party!</title>
+	<meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav.png"/>
+    <meta name="viewport" content= "width=device-width">
+	<style>
+		*{margin:0;}
+		html { background: black;}
+		body {
+			color:#fff;
+			background-color:#1e1e4080;
+			font: bold 1em monospace;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			justify-content:center;
+			min-height:100vh;
+			z-index:2;
+		}
+		body:before, body:after {
+			content:'';
+			position:fixed;
+			top:0;
+			left:0;
+			bottom:0;
+			right:0;
+		}
+		body:before {
+			background-image:	url('noise.gif');
+			background-size:	192px;
+			background-repeat:	repeat;
+			background-position:center;
+			opacity:.4;
+			z-index:-1;
+		}
+		body:after {
+			background-image:	url('vhs-small.gif'),	url('vhs-small2.gif');
+			background-size:	contain,				contain;
+			background-repeat:	no-repeat,				repeat;
+			background-position:center bottom,			center;
+			z-index:-2;
+		}
+		footer {
+			position:absolute;
+			font-size:13px;
+			bottom:1em;
+		}
+		footer>* {opacity:.3;}
+		footer a {color:inherit;text-decoration:none;}
+		footer>*:hover {opacity:1;}
+		#spin {
+			width:513px;
+			max-width:80vw;
+			height:513px;
+			max-height:50vh;
+			background-image:url('wiredparty.gif');
+			background-position:center;
+			background-repeat:no-repeat;
+			background-size:contain;
+			image-rendering:pixelated;
+			position:relative;
+			z-index:3;
+		}
+		#spin:hover:after {
+			opacity:1;
+		}
+		#info {
+			background-color:#bdbdbd;
+			color:#000;
+			padding:.25em;
+			max-width:16em;
+			border-top:3px #fff;
+			border-left:3px #fff;
+			border-bottom:3px #000;
+			border-right:3px #000;
+			border-radius:3px;
+			border-style:groove;
+			font-size:1.25em;
+		}
+		#info h1 {
+			background:linear-gradient(90deg, #00007b,#0884ce);
+			color:#fff;
+			padding:.25rem .5rem;
+			font-size:1.5rem;
+		}
+		#info p {
+			margin:.5rem 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="spin"></div>
+	<div id="info">
+		<h1>wired.party</h1>
+		<p>Do you want a wired.party subdomain, free hosting and be part of a cool webring?</p>
+		<p><a href="https://teamakes.games">Shoot me</a> (a mail)</p>
+	</div>
+	<footer>
+		<a href="imprint.html">imprint</a>
+		<p>favicon from <a href="https://twemoji.twitter.com/content/twemoji-twitter/en.html">twemoji</a></p>
+	</footer>
+</body>
+</html>
